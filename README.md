@@ -16,13 +16,6 @@
 
 ---
 
-## 🏢 Experiência Profissional
-- **Jovem Aprendiz - Gerdau**  
-  São José dos Campos, SP  
-  <p>Atuando no setor de Engenharia de Manutenção, aplicando conhecimentos de Banco de Dados para otimização de processos de manutenção industrial.</p>
-
----
-
 ## 🎓 Formação Acadêmica
 - **Ensino Superior** em Banco de Dados pela [FATEC São José dos Campos - Prof. Jessen Vidal](https://www.fatecsjc.edu.br/)  
   - 3º Semestre  
