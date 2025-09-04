@@ -18,9 +18,8 @@
 
 ## 🎓 Formação Acadêmica
 - **Ensino Superior** em Banco de Dados pela [FATEC São José dos Campos - Prof. Jessen Vidal](https://www.fatecsjc.edu.br/)  
-  - 3º Semestre  
-  - Foco em administração e análise de dados, com habilidades em SQL, otimização de consultas e arquitetura de dados.
-
+  - 4º Semestre  
+  - Formação voltada ao desenvolvimento de aplicações e automação de processos, integrando soluções de software com análise e administração de dados para gerar eficiência operacional e insights acionáveis em projetos acadêmicos e profissionais.
 ---
 
 ## 📂 Principais Projetos
@@ -34,6 +33,9 @@ Aqui estão alguns dos principais projetos de APIs em que trabalhei ao longo do 
 
 - **[API Porygon2 (3º Semestre)](https://github.com/PorygonAPI/Porygon2)**  
   <p>Ferramenta em Java com Spring Boot e MySQL para capturar e armazenar notícias estratégicas e dados relacionados, com filtros de pesquisa e integração RESTful.</p>
+
+- **[API Porygon3 (4º Semestre)](https://github.com/PorygonAPI/Porygon3)**  
+  <p>Aplicação em Java com Spring Boot, MySQL e Vue, voltada para o gerenciamento de áreas agrícolas. Permite cadastro de fazendas, culturas e produtividade, upload de arquivos <code>.geojson</code>, edição e aprovação de mapas gerados por IA, além de dashboards interativos para análise em tempo real.</p>
 
 ---
 
@@ -54,7 +56,7 @@ Aqui estão alguns dos principais projetos de APIs em que trabalhei ao longo do 
 ---
 
 ## 📈 Status do GitHub
-- [![GitHub Streak](https://streak-stats.demolab.com/?user=pablohgs05&theme=dracula)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=pablohgs05&theme=dracula)](https://git.io/streak-stats)
 
 ## 🌱 Sobre mim
 ```yaml
