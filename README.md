@@ -18,7 +18,7 @@
 
 ## 🎓 Formação Acadêmica
 - **Ensino Superior** em Banco de Dados pela [FATEC São José dos Campos - Prof. Jessen Vidal](https://www.fatecsjc.edu.br/)  
-  - 4º Semestre  
+  - 5º Semestre  
   - Formação voltada ao desenvolvimento de aplicações e automação de processos, integrando soluções de software com análise e administração de dados para gerar eficiência operacional e insights acionáveis em projetos acadêmicos e profissionais.
 ---
 
@@ -36,6 +36,9 @@ Aqui estão alguns dos principais projetos de APIs em que trabalhei ao longo do 
 
 - **[API Porygon3 (4º Semestre)](https://github.com/PorygonAPI/Porygon3)**  
   <p>Aplicação em Java com Spring Boot, MySQL e Vue, voltada para o gerenciamento de áreas agrícolas. Permite cadastro de fazendas, culturas e produtividade, upload de arquivos <code>.geojson</code>, edição e aprovação de mapas gerados por IA, além de dashboards interativos para análise em tempo real.</p>
+
+- **[API NeoHorizon (5º Semestre)](https://github.com/FatecNeoHorizon/API_5S)**  
+  <p>Aplicação de Business Intelligence desenvolvida com Python, Java (Spring Boot) e React, integrada ao Jira para análise e visualização de indicadores de projetos. A API processa e consolida dados de desempenho, custos e produtividade das equipes, exibindo dashboards interativos e relatórios estratégicos com controle de acesso por nível hierárquico.</p>
 
 ---
 
