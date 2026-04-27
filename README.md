@@ -29,7 +29,7 @@ Transformando dados industriais, processos manuais e rotinas operacionais em sol
 🏭 Atuação profissional em **Engenharia de Manutenção na GERDAU**  
 📊 Experiência prática com **Power BI, SAP HANA, MySQL, DBeaver e análise de indicadores industriais**  
 🤖 Desenvolvimento de automações com **Python, VBA e SAP GUI Scripting**  
-💻 Projetos acadêmicos e profissionais envolvendo **Java, Spring Boot, SQL, APIs REST e dashboards**  
+💻 Projetos acadêmicos e profissionais envolvendo **Java, Spring Boot, SQL, APIs REST e dashboards**
 
 Meu foco é unir **programação, dados e visão de negócio** para criar soluções que reduzam tarefas manuais, melhorem processos e apoiem decisões operacionais.
 
@@ -77,6 +77,16 @@ Aplicação de **Business Intelligence** integrada ao **Jira**, desenvolvida com
 <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
 <img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
 <img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white" />
+
+</div>
+
+---
+
+## 🐍 Minhas contribuições
+
+<div align="center">
+
+![snake gif](https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake.svg)
 
 </div>
 
