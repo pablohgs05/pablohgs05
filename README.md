@@ -1,19 +1,20 @@
 <div align="center">
 
 # Hello! Yo soy el Pablo Gregorio 🐒  
-### Banco de Dados | Data Analytics | Automação de Processos | Engenharia de Manutenção
+### Full-Stack Developer | Data Analytics | Process Automation | Maintenance Engineering
 
 <p>
-Transformando dados industriais, processos manuais e rotinas operacionais em soluções inteligentes com tecnologia.
+I build web applications, work with data, and automate real-world industrial routines — turning manual processes into smarter, faster and more reliable solutions.
 </p>
 
 <p>
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vue-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
-  <img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
 </p>
 
 <img src="https://github-readme-stats.vercel.app/api?username=pablohgs05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" height="160"/>
@@ -23,54 +24,53 @@ Transformando dados industriais, processos manuais e rotinas operacionais em sol
 
 ---
 
-## 🚀 Sobre mim
+## 🚀 About me
 
-🎓 Graduando em **Banco de Dados** pela **FATEC São José dos Campos – Prof. Jessen Vidal**  
-🏭 Atuação profissional em **Engenharia de Manutenção na GERDAU**  
-📊 Experiência prática com **Power BI, SAP HANA, MySQL, DBeaver e análise de indicadores industriais**  
-🤖 Desenvolvimento de automações com **Python, VBA e SAP GUI Scripting**  
-💻 Projetos acadêmicos e profissionais envolvendo **Java, Spring Boot, SQL, APIs REST e dashboards**
+I’m studying **Database Technology** at **FATEC São José dos Campos – Prof. Jessen Vidal** and working in **Maintenance Engineering at GERDAU**.
 
-Meu foco é unir **programação, dados e visão de negócio** para criar soluções que reduzam tarefas manuais, melhorem processos e apoiem decisões operacionais.
+At college, I work on **full-stack web projects**, building APIs, databases, front-end interfaces and complete business solutions.
 
----
+Professionally, I work with **automation, dashboards, KPIs, SAP routines and process improvement** inside an industrial environment.
 
-## 🧠 O que eu faço hoje
-
-- Automatização de processos internos com **Python, VBA e SAP GUI Scripting**
-- Desenvolvimento de consultas e análises em **SQL, MySQL e SAP HANA**
-- Utilização do **DBeaver** para conexão, consulta e exploração de bases de dados
-- Criação de dashboards estratégicos em **Power BI**
-- Tratamento, modelagem e integração de dados corporativos
-- Desenvolvimento de APIs acadêmicas com **Java + Spring Boot**
-- Apoio à análise de indicadores industriais, manutenção e produtividade
+I enjoy building tools that solve real problems, save time and create measurable impact.
 
 ---
 
-## 📂 Principais Projetos Acadêmicos
+## ⚙️ What I work with
 
-### 🔹 [API Porygon - 1º Semestre](https://github.com/pablohgs05/API-Porygon)
-Sistema desenvolvido em **Python** para gerenciamento de turmas, grupos e ciclos de entrega, gerando métricas de evolução acadêmica.
-
-### 🔹 [Leitor de Clima - 2º Semestre](https://github.com/pablohgs05/Leitor-de-clima)
-Aplicação em **Java** para leitura de arquivos CSV, processamento de dados climáticos e geração de relatórios analíticos.
-
-### 🔹 [API Porygon2 - 3º Semestre](https://github.com/pablohgs05/Porygon2)
-Aplicação com **Java, Spring Boot e MySQL** para captura, armazenamento e consulta de notícias estratégicas via API REST.
-
-### 🔹 [API Porygon3 - 4º Semestre](https://github.com/pablohgs05/Porygon3)
-Sistema voltado ao gerenciamento de áreas agrícolas, desenvolvido com **Java, Spring Boot, MySQL e Vue**, com upload de arquivos `.geojson`, dashboards e mapas interativos.
-
-### 🔹 [NeoHorizon / API 5S - 5º Semestre](https://github.com/pablohgs05/API_5S)
-Aplicação de **Business Intelligence** integrada ao **Jira**, desenvolvida com **Python, Java Spring Boot e React**, focada em indicadores de desempenho, custos, produtividade e controle de acesso por nível hierárquico.
+- Full-stack web development with **Java, Spring Boot, React and Vue**
+- REST API creation and database integration
+- Process automation using **Python, VBA and SAP GUI Scripting**
+- Data analysis and dashboards with **Power BI**
+- SQL queries using **MySQL and SAP HANA**
+- Internal tools focused on productivity and operations
 
 ---
 
-## 🛠 Tecnologias e Ferramentas
+## 📂 Main Academic Projects
+
+### 🔹 [API Porygon - 1st Semester](https://github.com/pablohgs05/API-Porygon)
+Python system for managing classes, groups and delivery cycles with student performance metrics.
+
+### 🔹 [Weather Reader - 2nd Semester](https://github.com/pablohgs05/Leitor-de-clima)
+Java application that reads CSV weather data and generates analytical reports.
+
+### 🔹 [API Porygon2 - 3rd Semester](https://github.com/pablohgs05/Porygon2)
+Java + Spring Boot + MySQL project for collecting and searching strategic news through REST APIs.
+
+### 🔹 [API Porygon3 - 4th Semester](https://github.com/pablohgs05/Porygon3)
+Full-stack agricultural platform with Java, Spring Boot, MySQL and Vue.
+
+### 🔹 [NeoHorizon / API 5S - 5th Semester](https://github.com/pablohgs05/API_5S)
+Business Intelligence platform using Python, Spring Boot and React.
+
+---
+
+## 🛠 Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,spring,mysql,postgres,git,github,html,css,js,react,vue,vscode,idea" />
+<img src="https://skillicons.dev/icons?i=java,spring,python,react,vue,js,html,css,mysql,postgres,git,github,vscode,idea" />
 
 <br><br>
 
@@ -82,17 +82,49 @@ Aplicação de **Business Intelligence** integrada ao **Jira**, desenvolvida com
 
 ---
 
-## 🐍 Minhas contribuições
+## ⚙️ Commit Pipeline
 
 <div align="center">
 
-![snake gif](https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake.svg)
+```txt
+Front-End → API → Database → Automation → Insights
+```
+
+<br>
+
+<img src="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+
+<br><br>
+
+```python
+while commits:
+    build_frontend()
+    create_api()
+    automate_tasks()
+    improve_process()
+```
+
+<br>
+
+<img src="https://img.shields.io/badge/Full--Stack-Building-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Data-Driven-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Automation-Running-green?style=for-the-badge" />
 
 </div>
 
 ---
 
-## 📈 Status do GitHub
+## 📊 Activity Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=pablohgs05&theme=react-dark&hide_border=true&area=true" />
+
+</div>
+
+---
+
+## 📈 GitHub Streak
 
 <div align="center">
 
@@ -102,29 +134,14 @@ Aplicação de **Business Intelligence** integrada ao **Jira**, desenvolvida com
 
 ---
 
-## 🌱 Atualmente evoluindo em
+## 🎯 Goal
 
-```yaml
-Back-End:
-  - Java
-  - Spring Boot
-  - APIs REST
-  - Integração com Banco de Dados
+To grow as a full-stack developer and data-driven problem solver, combining software, databases, automation and analytics to create real impact.
 
-Banco de Dados:
-  - MySQL
-  - SAP HANA
-  - SQL Avançado
-  - DBeaver
+---
 
-Data Analytics:
-  - Power BI
-  - Modelagem de Dados
-  - KPIs Industriais
-  - Indicadores de Manutenção
+## 📫 Contact
 
-Automação:
-  - Python
-  - VBA
-  - SAP GUI Scripting
-  - Automatização de Processos Corporativos
+📍 São José dos Campos - SP, Brazil  
+💼 Open to opportunities in Full-Stack, Data and Automation  
+🚀 Always learning, building and improving
