@@ -1,69 +1,120 @@
 <div align="center">
-  <h1>Olá! Yo soy el Pablo 🐒</h1>
-  <p>Bem-vindo ao meu perfil GitHub!</p>
 
-  <!-- Badges Personalizadas -->
-  <p>
-    <img src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
-    <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-    <img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  </p>
+# Hello! Yo soy el Pablo Gregorio 🐒  
+### Banco de Dados | Data Analytics | Automação de Processos | Engenharia de Manutenção
 
-  <!-- GitHub Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=pablohgs05&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pablohgs05&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+<p>
+Transformando dados industriais, processos manuais e rotinas operacionais em soluções inteligentes com tecnologia.
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
+  <img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+</p>
+
+<img src="https://github-readme-stats.vercel.app/api?username=pablohgs05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pablohgs05&layout=compact&theme=dracula" height="160"/>
+
 </div>
 
 ---
 
-## 🎓 Formação Acadêmica
-- **Ensino Superior** em Banco de Dados pela [FATEC São José dos Campos - Prof. Jessen Vidal](https://www.fatecsjc.edu.br/)  
-  - 5º Semestre  
-  - Formação voltada ao desenvolvimento de aplicações e automação de processos, integrando soluções de software com análise e administração de dados para gerar eficiência operacional e insights acionáveis em projetos acadêmicos e profissionais.
+## 🚀 Sobre mim
+
+🎓 Graduando em **Banco de Dados** pela **FATEC São José dos Campos – Prof. Jessen Vidal**  
+🏭 Atuação profissional em **Engenharia de Manutenção na GERDAU**  
+📊 Experiência prática com **Power BI, SAP HANA, MySQL, DBeaver e análise de indicadores industriais**  
+🤖 Desenvolvimento de automações com **Python, VBA e SAP GUI Scripting**  
+💻 Projetos acadêmicos e profissionais envolvendo **Java, Spring Boot, SQL, APIs REST e dashboards**  
+
+Meu foco é unir **programação, dados e visão de negócio** para criar soluções que reduzam tarefas manuais, melhorem processos e apoiem decisões operacionais.
+
 ---
 
-## 📂 Principais Projetos
-Aqui estão alguns dos principais projetos de APIs em que trabalhei ao longo do curso:
+## 🧠 O que eu faço hoje
 
-- **[API Porygon (1º Semestre)](https://github.com/pablohgs05/API-Porygon)**  
-  <p>Desenvolvido em Python para a PBLTeX, um sistema que gerencia turmas, grupos e ciclos de entrega de alunos, gerando métricas de evolução de aprendizado.</p>
+- Automatização de processos internos com **Python, VBA e SAP GUI Scripting**
+- Desenvolvimento de consultas e análises em **SQL, MySQL e SAP HANA**
+- Utilização do **DBeaver** para conexão, consulta e exploração de bases de dados
+- Criação de dashboards estratégicos em **Power BI**
+- Tratamento, modelagem e integração de dados corporativos
+- Desenvolvimento de APIs acadêmicas com **Java + Spring Boot**
+- Apoio à análise de indicadores industriais, manutenção e produtividade
 
-- **[Leitor de Clima (2º Semestre)](https://github.com/pablohgs05/Leitor-de-clima)**  
-  <p>API em Java que processa dados climáticos de arquivos CSV, gera relatórios de médias e gráficos para análise visual das condições de clima em São Paulo.</p>
+---
 
-- **[API Porygon2 (3º Semestre)](https://github.com/pablohgs05/Porygon2)**  
-  <p>Ferramenta em Java com Spring Boot e MySQL para capturar e armazenar notícias estratégicas e dados relacionados, com filtros de pesquisa e integração RESTful.</p>
+## 📂 Principais Projetos Acadêmicos
 
-- **[API Porygon3 (4º Semestre)](https://github.com/pablohgs05/Porygon3)**  
-  <p>Aplicação em Java com Spring Boot, MySQL e Vue, voltada para o gerenciamento de áreas agrícolas. Permite cadastro de fazendas, culturas e produtividade, upload de arquivos <code>.geojson</code>, edição e aprovação de mapas gerados por IA, além de dashboards interativos para análise em tempo real.</p>
+### 🔹 [API Porygon - 1º Semestre](https://github.com/pablohgs05/API-Porygon)
+Sistema desenvolvido em **Python** para gerenciamento de turmas, grupos e ciclos de entrega, gerando métricas de evolução acadêmica.
 
-- **[API NeoHorizon (5º Semestre)](https://github.com/pablohgs05/API_5S)**  
-  <p>Aplicação de Business Intelligence desenvolvida com Python, Java (Spring Boot) e React, integrada ao Jira para análise e visualização de indicadores de projetos. A API processa e consolida dados de desempenho, custos e produtividade das equipes, exibindo dashboards interativos e relatórios estratégicos com controle de acesso por nível hierárquico.</p>
+### 🔹 [Leitor de Clima - 2º Semestre](https://github.com/pablohgs05/Leitor-de-clima)
+Aplicação em **Java** para leitura de arquivos CSV, processamento de dados climáticos e geração de relatórios analíticos.
+
+### 🔹 [API Porygon2 - 3º Semestre](https://github.com/pablohgs05/Porygon2)
+Aplicação com **Java, Spring Boot e MySQL** para captura, armazenamento e consulta de notícias estratégicas via API REST.
+
+### 🔹 [API Porygon3 - 4º Semestre](https://github.com/pablohgs05/Porygon3)
+Sistema voltado ao gerenciamento de áreas agrícolas, desenvolvido com **Java, Spring Boot, MySQL e Vue**, com upload de arquivos `.geojson`, dashboards e mapas interativos.
+
+### 🔹 [NeoHorizon / API 5S - 5º Semestre](https://github.com/pablohgs05/API_5S)
+Aplicação de **Business Intelligence** integrada ao **Jira**, desenvolvida com **Python, Java Spring Boot e React**, focada em indicadores de desempenho, custos, produtividade e controle de acesso por nível hierárquico.
 
 ---
 
 ## 🛠 Tecnologias e Ferramentas
+
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="springboot logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" height="40" alt="postman logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="40" alt="intellij logo" />
+
+<img src="https://skillicons.dev/icons?i=python,java,spring,mysql,postgres,git,github,html,css,js,react,vue,vscode,idea" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+<img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
+<img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white" />
+
 </div>
 
 ---
 
 ## 📈 Status do GitHub
+
+<div align="center">
+
 [![GitHub Streak](https://streak-stats.demolab.com/?user=pablohgs05&theme=dracula)](https://git.io/streak-stats)
 
-## 🌱 Sobre mim
+</div>
+
+---
+
+## 🌱 Atualmente evoluindo em
+
 ```yaml
-- 🔭 Atualmente trabalhando em: Engenharia de Manutenção na Gerdau
-- 🎓 Estudando: Banco de Dados - FATEC São José dos Campos
-- 🌱 Aprendendo mais sobre: Big Data, SQL Avançado
-- 👯 Aberto para colaborar em: Projetos de banco de dados e automação de processos
+Back-End:
+  - Java
+  - Spring Boot
+  - APIs REST
+  - Integração com Banco de Dados
+
+Banco de Dados:
+  - MySQL
+  - SAP HANA
+  - SQL Avançado
+  - DBeaver
+
+Data Analytics:
+  - Power BI
+  - Modelagem de Dados
+  - KPIs Industriais
+  - Indicadores de Manutenção
+
+Automação:
+  - Python
+  - VBA
+  - SAP GUI Scripting
+  - Automatização de Processos Corporativos
