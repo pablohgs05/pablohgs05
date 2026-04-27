@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Olá! Eu sou o Pablo 👋</h1>
+  <h1>Olá! Yo soy el Pablo 🐒</h1>
   <p>Bem-vindo ao meu perfil GitHub!</p>
 
   <!-- Badges Personalizadas -->
