@@ -1,68 +1,45 @@
 <div align="center">
 
-# Hello! Yo soy el Pablo Gregorio 🐒  
-### Full-Stack Developer | Data Analytics | Process Automation | Maintenance Engineering
+# Hello! Yo soy el Pablo Gregorio 🐒
 
-<p>
-I build web applications, work with data, and automate real-world industrial routines — turning manual processes into smarter, faster and more reliable solutions.
-</p>
+### Full-Stack Developer • Data Analytics • Process Automation
 
-<p>
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vue-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
-</p>
+I build web applications, automate industrial routines and transform data into smarter business decisions.
 
-<img src="https://github-readme-stats.vercel.app/api?username=pablohgs05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pablohgs05&layout=compact&theme=dracula" height="160"/>
+<br>
+
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/Vue-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+
+<br><br>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=pablohgs05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pablohgs05&layout=compact&theme=dracula"/>
 
 </div>
 
 ---
 
-## 🚀 About me
+## 🚀 About Me
 
-I’m studying **Database Technology** at **FATEC São José dos Campos – Prof. Jessen Vidal** and working in **Maintenance Engineering at GERDAU**.
+I’m a **Database Technology student at FATEC São José dos Campos** and currently work in **Maintenance Engineering at GERDAU**, where I apply technology to improve real industrial processes.
 
-At college, I work on **full-stack web projects**, building APIs, databases, front-end interfaces and complete business solutions.
-
-Professionally, I work with **automation, dashboards, KPIs, SAP routines and process improvement** inside an industrial environment.
-
-I enjoy building tools that solve real problems, save time and create measurable impact.
+My work connects **software development, data analysis, automation and business operations**. I enjoy building practical solutions that reduce manual work, improve decision-making and create measurable impact.
 
 ---
 
-## ⚙️ What I work with
+## ⚙️ What I Do
 
-- Full-stack web development with **Java, Spring Boot, React and Vue**
-- REST API creation and database integration
-- Process automation using **Python, VBA and SAP GUI Scripting**
-- Data analysis and dashboards with **Power BI**
-- SQL queries using **MySQL and SAP HANA**
-- Internal tools focused on productivity and operations
-
----
-
-## 📂 Main Academic Projects
-
-### 🔹 [API Porygon - 1st Semester](https://github.com/pablohgs05/API-Porygon)
-Python system for managing classes, groups and delivery cycles with student performance metrics.
-
-### 🔹 [Weather Reader - 2nd Semester](https://github.com/pablohgs05/Leitor-de-clima)
-Java application that reads CSV weather data and generates analytical reports.
-
-### 🔹 [API Porygon2 - 3rd Semester](https://github.com/pablohgs05/Porygon2)
-Java + Spring Boot + MySQL project for collecting and searching strategic news through REST APIs.
-
-### 🔹 [API Porygon3 - 4th Semester](https://github.com/pablohgs05/Porygon3)
-Full-stack agricultural platform with Java, Spring Boot, MySQL and Vue.
-
-### 🔹 [NeoHorizon / API 5S - 5th Semester](https://github.com/pablohgs05/API_5S)
-Business Intelligence platform using Python, Spring Boot and React.
+- Build **full-stack web applications** with Java, Spring Boot, React and Vue
+- Create and integrate **REST APIs** with relational databases
+- Develop **automation scripts** using Python, VBA and SAP GUI Scripting
+- Design **Power BI dashboards** focused on KPIs, performance and operations
+- Work with **SQL, MySQL and SAP HANA** for data extraction and analysis
+- Transform manual routines into faster, cleaner and more reliable processes
 
 ---
 
@@ -74,59 +51,55 @@ Business Intelligence platform using Python, Spring Boot and React.
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-<img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
-<img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white" />
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white"/>
+<img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white"/>
+<img src="https://img.shields.io/badge/VBA-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 
 </div>
 
 ---
 
-## ⚙️ Commit Pipeline
+## 📂 Featured Academic Projects
+
+### 🔹 [API Porygon - 1st Semester](https://github.com/pablohgs05/API-Porygon)
+Python system for managing classes, teams, delivery cycles and student performance metrics.
+
+### 🔹 [Weather Reader - 2nd Semester](https://github.com/pablohgs05/Leitor-de-clima)
+Java application that reads climate data from CSV files and generates analytical reports.
+
+### 🔹 [API Porygon2 - 3rd Semester](https://github.com/pablohgs05/Porygon2)
+Strategic news platform built with Java, Spring Boot and MySQL, focused on collecting, organizing and searching relevant information.
+
+### 🔹 [API Porygon3 - 4th Semester](https://github.com/pablohgs05/Porygon3)
+Full-stack agricultural management platform using Vue, Java, Spring Boot and MySQL.
+
+### 🔹 [NeoHorizon / API 5S - 5th Semester](https://github.com/pablohgs05/API_5S)
+Business Intelligence platform combining Python, React and Spring Boot to support data-driven decision-making.
+
+---
+
+## ⚡ Contribution Flow
 
 <div align="center">
 
-```txt
-Front-End → API → Database → Automation → Insights
-```
-
-<br>
-
-<img src="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+**Idea → Code → Data → Automation → Insight → Improvement**
 
 <br><br>
 
-```python
-while commits:
-    build_frontend()
-    create_api()
-    automate_tasks()
-    improve_process()
-```
-
-<br>
-
-<img src="https://img.shields.io/badge/Full--Stack-Building-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Data-Driven-orange?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Automation-Running-green?style=for-the-badge" />
+<img src="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
 
 ---
 
-## 📊 Activity Graph
+## 📈 GitHub Activity
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=pablohgs05&theme=react-dark&hide_border=true&area=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=pablohgs05&theme=react-dark&hide_border=true&area=true"/>
 
-</div>
-
----
-
-## 📈 GitHub Streak
-
-<div align="center">
+<br><br>
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=pablohgs05&theme=dracula)](https://git.io/streak-stats)
 
@@ -134,14 +107,31 @@ while commits:
 
 ---
 
-## 🎯 Goal
+## 🎯 Current Mission
 
-To grow as a full-stack developer and data-driven problem solver, combining software, databases, automation and analytics to create real impact.
+> Grow as a developer capable of connecting **software, data, automation and business vision** to build useful, scalable and impactful solutions.
 
 ---
 
 ## 📫 Contact
 
+<div align="center">
+
 📍 São José dos Campos - SP, Brazil  
-💼 Open to opportunities in Full-Stack, Data and Automation  
-🚀 Always learning, building and improving
+🚀 Open to opportunities in **Full-Stack Development, Data Analytics and Process Automation**
+
+<br><br>
+
+<a href="mailto:pablogregorio8@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-pablogregorio8%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/pablo-henrique05/">
+<img src="https://img.shields.io/badge/LinkedIn-Pablo%20Henrique-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://www.instagram.com/pablo.hgs/">
+<img src="https://img.shields.io/badge/Instagram-pablo.hgs-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+</div>
