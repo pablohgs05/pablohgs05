@@ -74,8 +74,11 @@ Strategic news platform built with Java, Spring Boot and MySQL, focused on colle
 ### 🔹 [API Porygon3 - 4th Semester](https://github.com/pablohgs05/Porygon3)
 Full-stack agricultural management platform using Vue, Java, Spring Boot and MySQL.
 
-### 🔹 [NeoHorizon / API 5S - 5th Semester](https://github.com/pablohgs05/API_5S)
+### 🔹 [NeoHorizon - 5th Semester](https://github.com/pablohgs05/API_5S)
 Business Intelligence platform combining Python, React and Spring Boot to support data-driven decision-making.
+
+### 🔹 [HiAthos - 6th Semester](https://github.com/pablohgs05/Athos)
+Full-stack platform for electric power analytics, centralizing ANEEL data to analyze indicators like DEC and FEC, enabling performance comparison and data-driven decisions.
 
 ---
 
