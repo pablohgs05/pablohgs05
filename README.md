@@ -54,8 +54,8 @@ Academic project developed with **TECSYS** to analyze public Brazilian electrici
 ### 📈 [Neo Horizon — Jira Business Intelligence](https://github.com/pablohgs05/API_5S) · 2025
 Academic BI platform for project management indicators, combining **Python ETL, React and Spring Boot** with Jira data. Worked on **quality assurance, testing processes and DevOps documentation**.
 
-### ⚖️ [Praxis / Case Law](https://github.com/pablohgs05/Case-Law) · 2026
-Collaborative academic project for unified search across Brazilian court decisions. Explore the repository for its **search architecture, test strategy, CI and technical documentation**.
+### 🧪 [Case Law — DevOps Coursework](https://github.com/pablohgs05/Case-Law) · 2026
+Existing application used as the practical environment for my **DevOps coursework**. My focus is on **test strategy, unit/integration testing, quality checks and CI documentation**, not on developing the application's product features.
 
 ## 🎓 Academic project journey
 
