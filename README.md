@@ -88,6 +88,28 @@ Collaborative academic project for unified search across Brazilian court decisio
 
 </div>
 
+## 📊 GitHub snapshot
+
+| Repositories reviewed | Attributed commits | Private repositories included |
+|:---:|:---:|:---:|
+| **25** | **476** | **5** |
+
+<div align="center">
+<img width="840" alt="Language distribution across source files in my GitHub repositories: Java 31.2%, Python 27.3%, TypeScript 12.4%, Dart 12.1%, Vue 5.6%, and other languages 11.4%" src="assets/language-snapshot.svg">
+</div>
+
+<details>
+<summary>How these statistics were calculated</summary>
+
+* **Snapshot date:** October 15, 2026. These are audited snapshots, not live counters.
+* **Commits:** 476 commits attributed to my GitHub account on the **current default branches of 25 accessible repositories owned by this account**. Commits on other branches, external/team-owned repositories, or with unmatched author identities may not be counted.
+* **Language mix:** approximate share of **2.61 MB of tracked source-file bytes** across 17 code-bearing repositories, including accessible private repositories in aggregate. Documentation-only and empty repositories contribute no source-file bytes; generated/vendor files, binaries and documentation are excluded. Git submodule contents are not included through the parent repository (but are counted where separately accessible).
+* **Important:** these proportions describe the code in repositories, including collaborative projects. They do **not** measure time spent coding, personal lines authored or proficiency. Private repository names and source code are not published.
+
+</details>
+
+---
+
 ## 🐍 Contributions
 
 <div align="center">
