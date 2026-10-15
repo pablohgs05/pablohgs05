@@ -1,0 +1,49 @@
+name: Refresh profile statistics
+
+on:
+  schedule:
+    - cron: "29 6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - "scripts/update-profile-stats.js"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh cached GitHub stats image
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate stats (preserve last good image on API failure)
+        run: node scripts/update-profile-stats.js
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+
+      - name: Publish image only when updated
+        run: |
+          if git diff --quiet -- assets/profile-stats.svg; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-stats.svg
+          git commit -m "chore(profile): refresh cached activity stats [skip ci]"
+          git push origin HEAD:main
