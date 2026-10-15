@@ -5,7 +5,8 @@
 // and only extends read access to private repositories if explicitly configured.
 const fs = require('node:fs');
 const username = 'pablohgs05';
-const readToken = process.env.PROFILE_STATS_TOKEN || process.env.GITHUB_TOKEN;
+const publicToken = process.env.GITHUB_TOKEN;
+const privateToken = process.env.PROFILE_STATS_TOKEN;
 const apiHost = 'https://api.github.com';
 
 const langExtensions = {
@@ -22,14 +23,14 @@ const generated = /(\.min\.(js|css)|\.g\.(dart|ts)|\.freezed\.dart|\.pb\.go|\.ge
 const escapeXml = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const wait = ms => new Promise(resolve => setTimeout(resolve,ms));
 
-async function request(path, method='GET', body) {
-  if (!readToken) throw new Error('No read token is available');
+async function request(path, method='GET', body, token=privateToken || publicToken) {
+  if (!token) throw new Error('No GitHub API token is available');
   for (let attempt=1;attempt<=3;attempt++) {
     try {
       const response = await fetch(apiHost+path, {
         method,
         headers:{
-          Authorization:'Bearer '+readToken,
+          Authorization:'Bearer '+token,
           Accept:'application/vnd.github+json',
           'X-GitHub-Api-Version':'2022-11-28',
           'Content-Type':'application/json',
@@ -49,74 +50,112 @@ async function request(path, method='GET', body) {
   }
   throw new Error('Unexpected API retry exhaustion');
 }
-async function pageList(path, limit=3) {
+async function pageList(path, limit=10, token=privateToken || publicToken) {
   const all=[];
   for(let page=1;page<=limit;page++) {
-    const items=await request(path+(path.includes('?')?'&':'?')+'per_page=100&page='+page);
+    const items=await request(path+(path.includes('?')?'&':'?')+'per_page=100&page='+page,'GET',undefined,token);
     if(!Array.isArray(items)) throw new Error('Invalid repository list response');
     all.push(...items);
-    if(items.length<100) break;
+    if(items.length<100) return all;
   }
-  return all;
+  throw new Error('Repository pagination limit reached; refusing to publish incomplete totals');
+}
+function chooseContributions(views) {
+  if(!Array.isArray(views)||!views.length) throw new Error('No contribution data available');
+  const output={commits:0,prs:0,issues:0};
+  for(const view of views) {
+    for(const key of Object.keys(output)) {
+      if(!Number.isSafeInteger(view[key])||view[key]<0) throw new Error('Invalid '+key+' contribution count');
+      output[key]=Math.max(output[key],view[key]);
+    }
+  }
+  return output;
+}
+async function yearlyContributions(year, token) {
+  const now=new Date();
+  const from=year+'-01-01T00:00:00Z';
+  const end=new Date(Date.UTC(year,11,31,23,59,59));
+  const to=(end>now?now:end).toISOString();
+  const query='query($name:String!,$from:DateTime!,$to:DateTime!){ user(login:$name){ contributionsCollection(from:$from,to:$to){ totalCommitContributions totalPullRequestContributions totalIssueContributions } } }';
+  const response=await request('/graphql','POST',{query,variables:{name:username,from,to}},token);
+  if(response.errors?.length) throw new Error('GitHub contribution query failed: '+response.errors[0].message);
+  const data=response.data?.user?.contributionsCollection;
+  if(!data) throw new Error('GitHub returned no contribution collection');
+  return {
+    commits:data.totalCommitContributions,
+    prs:data.totalPullRequestContributions,
+    issues:data.totalIssueContributions
+  };
 }
 async function contributions() {
-  const today = new Date();
-  const result={commits:0,prs:0,issues:0};
-  const query='query($name:String!,$from:DateTime!,$to:DateTime!){ user(login:$name){ contributionsCollection(from:$from,to:$to){ totalCommitContributions totalPullRequestContributions totalIssueContributions } } }';
-  for(let y=2023;y<=today.getUTCFullYear();y++) {
-    const from=y+'-01-01T00:00:00Z';
-    const end=new Date(Date.UTC(y,11,31,23,59,59));
-    const to=(end>today?today:end).toISOString();
-    const response=await request('/graphql','POST',{query,variables:{name:username,from,to}});
-    if(response.errors?.length) throw new Error('GraphQL contribution query failed: '+response.errors[0].message);
-    const data=response.data?.user?.contributionsCollection;
-    if(!data || !Number.isFinite(data.totalCommitContributions)) throw new Error('Invalid contribution response');
-    result.commits+=data.totalCommitContributions;
-    result.prs+=data.totalPullRequestContributions||0;
-    result.issues+=data.totalIssueContributions||0;
+  // GitHub App/repository tokens and fine-grained PATs may have different views
+  // of GraphQL contributions. Never let a narrower view reduce a metric.
+  // Taking the highest count PER YEAR and metric avoids double-counting overlap.
+  if(!publicToken) throw new Error('GITHUB_TOKEN is required for baseline contributions');
+  const total={commits:0,prs:0,issues:0};
+  let privateViews=0;
+  for(let year=2023;year<=new Date().getUTCFullYear();year++) {
+    const views=[await yearlyContributions(year,publicToken)];
+    if(privateToken&&privateToken!==publicToken) {
+      try {
+        views.push(await yearlyContributions(year,privateToken));
+        privateViews++;
+      } catch(error) {
+        // The PAT may be limited to repository contents; the reliable baseline
+        // remains the GitHub Actions token. Don't publish PAT error details.
+        console.warn('Supplemental contribution view unavailable for '+year+'; retaining Actions-token baseline.');
+      }
+    }
+    const selected=chooseContributions(views);
+    for(const key of Object.keys(total)) total[key]+=selected[key];
   }
-  return result;
+  console.log('Contribution totals verified with the Actions token and '+privateViews+' supplemental annual view(s).');
+  return total;
 }
 async function ownedRepositories() {
+  if(process.env.REQUIRE_PRIVATE_STATS==='true'&&!privateToken) {
+    throw new Error('Required PROFILE_STATS_TOKEN is missing; last published image is preserved');
+  }
   const byName=new Map();
-  const publicRepos=await pageList('/users/'+username+'/repos?type=owner');
-  for(const repo of publicRepos) if(repo.owner?.login?.toLowerCase()===username) byName.set(repo.full_name,repo);
-  if(process.env.PROFILE_STATS_TOKEN) {
-    // A fine-grained personal token with explicitly granted repository read
-    // access may return private repositories here. No private names are rendered.
-    try {
-      const permitted=await pageList('/user/repos?affiliation=owner');
-      for(const repo of permitted) if(repo.owner?.login?.toLowerCase()===username) byName.set(repo.full_name,repo);
-    } catch(error) {
-      console.warn('Extra private-repository access unavailable; using public repositories.');
+  // The public list also works when the fine-grained token cannot see org/team repos.
+  const publicRepos=await pageList('/users/'+username+'/repos?type=owner',10,publicToken);
+  for(const repo of publicRepos) {
+    if(repo.owner?.login?.toLowerCase()===username) byName.set(repo.full_name,repo);
+  }
+  if(privateToken) {
+    // Fail visibly if the configured token has expired or lost repository access.
+    // Never silently rewrite a private-inclusive image as public-only.
+    const permitted=await pageList('/user/repos?affiliation=owner',10,privateToken);
+    for(const repo of permitted) {
+      if(repo.owner?.login?.toLowerCase()===username) byName.set(repo.full_name,repo);
     }
   }
   return [...byName.values()];
 }
 async function languages(repositories) {
-  const totals={}; let measured=0; let inspected=0; let skipped=0;
-  for(const repo of repositories.filter(r=>!r.archived)) {
-    try {
-      const tree=await request('/repos/'+repo.full_name+'/git/trees/'+encodeURIComponent(repo.default_branch)+'?recursive=1');
-      if(!Array.isArray(tree.tree)||tree.truncated){skipped++;continue;}
-      for(const file of tree.tree) {
-        if(file.type!=='blob'||!file.size||file.size>1000000)continue;
-        const path=file.path.toLowerCase();
-        if(exclusions.test(path)||generated.test(path)) continue;
-        const ext=path.split('.').pop();
-        const language=langExtensions[ext];
-        if(!language)continue;
-        totals[language]=(totals[language]||0)+file.size;
-        measured+=file.size;
-      }
-      inspected++;
-    } catch(error) {
-      // One unavailable repository must never invalidate all previous data.
-      skipped++;
+  const totals={}; let measured=0; let inspected=0; let empty=0;
+  // Archived repositories contain work too; include them, and never silently
+  // omit source trees just because GitHub temporarily refuses a request.
+  for(const repo of repositories) {
+    if(!repo.default_branch) {empty++;continue;}
+    const tree=await request('/repos/'+repo.full_name+'/git/trees/'+encodeURIComponent(repo.default_branch)+'?recursive=1');
+    if(!Array.isArray(tree.tree)||tree.truncated) {
+      throw new Error('Incomplete source tree from GitHub; preserving the previous image');
     }
+    for(const file of tree.tree) {
+      if(file.type!=='blob'||!file.size||file.size>1000000)continue;
+      const path=file.path.toLowerCase();
+      if(exclusions.test(path)||generated.test(path))continue;
+      const ext=path.split('.').pop();
+      const language=langExtensions[ext];
+      if(!language)continue;
+      totals[language]=(totals[language]||0)+file.size;
+      measured+=file.size;
+    }
+    inspected++;
   }
   if(!measured||!inspected) throw new Error('No usable source-file data; preserving existing image');
-  return {totals,measured,inspected,skipped};
+  return {totals,measured,inspected,empty};
 }
 function render(stats, repos, usage) {
   const today=new Date().toISOString().slice(0,10);
@@ -128,11 +167,12 @@ function render(stats, repos, usage) {
     name,pct:bytes/usage.measured*100,color:languageColors[name]||palette[i]
   }));
   const shown=legend.map(v=>v.name+' '+v.pct.toFixed(1)+'%').join(', ');
-  const ownership=process.env.PROFILE_STATS_TOKEN?'accessible':'public';
+  const privateCount=repos.filter(repo=>repo.private).length;
+  const ownership=privateCount?'incl. '+privateCount+' private':'public';
   const lines=[];
   lines.push('<svg xmlns="http://www.w3.org/2000/svg" width="880" height="305" viewBox="0 0 880 305" role="img" aria-labelledby="title desc">');
   lines.push('<title id="title">GitHub activity and repository languages, refreshed '+today+'</title>');
-  lines.push('<desc id="desc">'+escapeXml('GitHub credited contributions since 2023: '+stats.commits+' commits, '+stats.prs+' pull requests. '+repos.length+' owned repositories visible to the updater. Source file distribution: '+shown+'. Not an authorship or proficiency measurement.')+'</desc>');
+  lines.push('<desc id="desc">'+escapeXml('GitHub credited contributions since 2023: '+stats.commits+' commits, '+stats.prs+' pull requests. '+repos.length+' owned repositories visible to the updater ('+privateCount+' private). Source file distribution: '+shown+'. Not an authorship or proficiency measurement.')+'</desc>');
   lines.push('<rect x="1" y="1" width="878" height="303" rx="16" fill="#151b29" stroke="#303b50" stroke-width="2"/>');
   lines.push('<g font-family="Arial,Helvetica,sans-serif">');
   lines.push('<text x="30" y="36" fill="#f8fafc" font-size="21" font-weight="700">GitHub activity &amp; languages</text>');
@@ -166,15 +206,18 @@ function render(stats, repos, usage) {
   lines.push('</g></svg>');
   return lines.join('\n')+'\n';
 }
-(async()=>{
+if(require.main===module) (async()=>{
   const [stats,repos]=await Promise.all([contributions(),ownedRepositories()]);
   const usage=await languages(repos);
   fs.mkdirSync('assets',{recursive:true});
   const svg=render(stats,repos,usage);
   const existing=fs.existsSync('assets/profile-stats.svg')?fs.readFileSync('assets/profile-stats.svg','utf8'):'';
   if(existing!==svg) fs.writeFileSync('assets/profile-stats.svg',svg,'utf8');
-  console.log('Profile visualization refreshed. '+repos.length+' repos visible; '+usage.inspected+' source trees inspected; '+usage.skipped+' skipped.');
+  console.log('Profile visualization refreshed. '+repos.length+' owned repos ('+repos.filter(repo=>repo.private).length+' private); '+usage.inspected+' source trees inspected; '+usage.empty+' empty.');
 })().catch(error=>{
-  // Never replace a last-known-good SVG with an error or partial data.
-  console.warn('Profile stats refresh skipped; preserving last-known-good image. '+error.message);
+  // Keep the last good SVG and FAIL the job so GitHub can report the incident.
+  console.error('Profile stats refresh failed; preserving last-known-good image. '+error.message);
+  process.exitCode=1;
 });
+
+module.exports={chooseContributions};
