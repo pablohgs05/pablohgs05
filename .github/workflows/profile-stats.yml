@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/profile-stats.yml"
       - "scripts/update-profile-stats.js"
+      - ".github/profile-stats-refresh"
 
 permissions:
   contents: write
