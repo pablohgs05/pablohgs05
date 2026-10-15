@@ -1,140 +1,112 @@
 <div align="center">
 
-# Hello! Yo soy el Pablo Gregorio 🐒
+# Hey, I'm Pablo Gregório 👋
 
-### Full-Stack Developer • Data Analytics • Process Automation
+### Data & BI • Python Automation • Full-Stack Development
 
-I build web applications, automate industrial routines and transform data into smarter business decisions.
+**I turn operational data into useful insights and repetitive work into reliable solutions.**
 
-<br>
+Based in São José dos Campos, Brazil 🇧🇷
 
-<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Vue-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-
-<br><br>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=pablohgs05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pablohgs05&layout=compact&theme=dracula"/>
+<a href="https://www.linkedin.com/in/pablo-henrique05/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+<a href="mailto:pablogregorio8@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
+<a href="https://github.com/pablohgs05/PortfolioBD-Pablo"><img alt="Academic portfolio" src="https://img.shields.io/badge/Portfolio-Explore-25292E?style=flat-square&logo=github&logoColor=white"></a>
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 👨‍💻 About me
 
-I’m a **Database Technology student at FATEC São José dos Campos** and currently work in **Maintenance Engineering at GERDAU**, where I apply technology to improve real industrial processes.
+I'm a **Database Technology student at FATEC São José dos Campos** and an **Administrative Analyst at FM2C**, working with **Gerdau's Maintenance Engineering team** in a data, BI and process automation capacity.
 
-My work connects **software development, data analysis, automation and business operations**. I enjoy building practical solutions that reduce manual work, improve decision-making and create measurable impact.
+My journey started with industrial operations as an apprentice, evolved into a maintenance data internship and grew into my current analyst role. I like working at the intersection of **data engineering, analytics, automation and software development**: understanding an operational problem, building a solution and making information easier to act on.
 
----
+- 📊 **Data & BI:** Power BI, Power Query, DAX, Excel, SQL, SAP HANA and KPI monitoring.
+- 🐍 **Automation:** Python, VBA and SAP-related routines to reduce repetitive manual work.
+- 💻 **Software:** Java/Spring Boot, REST APIs, React, Vue, TypeScript and relational databases.
+- 🧪 **Quality:** automated tests, CI/CD, GitHub Actions and practical DevOps processes.
+- 🎯 **Career direction:** Data / BI Analyst, Python automation, backend and full-stack engineering.
 
-## ⚙️ What I Do
+> I value solutions that work in the real world, not just in a demo.
 
-- Build **full-stack web applications** with Java, Spring Boot, React and Vue
-- Create and integrate **REST APIs** with relational databases
-- Develop **automation scripts** using Python, VBA and SAP GUI Scripting
-- Design **Power BI dashboards** focused on KPIs, performance and operations
-- Work with **SQL, MySQL and SAP HANA** for data extraction and analysis
-- Transform manual routines into faster, cleaner and more reliable processes
+## 🏭 Experience in practice
 
----
+**FM2C · Assigned to Gerdau — Maintenance Engineering | Administrative Analyst (2026–present)**
 
-## 🛠 Tech Stack
+- Maintain and improve Power BI reports and operational dashboards using **Power Query and DAX**.
+- Analyze maintenance indicators, machine interruptions, costs and backlog to support operational decisions.
+- Work with **SQL, SAP HANA, Excel and Python** for data analysis, reporting and automation.
+- Collaborate with operational stakeholders to translate recurring needs into maintainable solutions.
+
+**Earlier experience at Gerdau:** university internship in maintenance data/analytics (2025–2026) and industrial apprenticeship (2024–2025).
+
+*Professional work is described at a high level; internal datasets, dashboards and company systems are not published here.*
+
+## 🚀 Selected projects
+
+### 🐾 [Grupo Suçuarana — Field Reporting App](https://github.com/pablohgs05/grupo-sucuarana-app) · In development
+Volunteer, offline-first mobile reporting for field operations. The project combines **Flutter/Dart, SQLite, PDF generation and offline synchronization** with a **Java/Spring Boot REST API**, with attention to privacy, reliability and maintainability.
+
+### ⚡ [HiATHOS — Energy Distribution Analytics](https://github.com/pablohgs05/Athos) · 2026
+Academic project developed with **TECSYS** to analyze public Brazilian electricity regulator (**ANEEL**) data, including **DEC/FEC** continuity indicators. My contributions included **Vue/Leaflet geospatial visualizations, forecasting-related interfaces, testing and DevOps/QA work**.
+
+### 📈 [Neo Horizon — Jira Business Intelligence](https://github.com/pablohgs05/API_5S) · 2025
+Academic BI platform for project management indicators, combining **Python ETL, React and Spring Boot** with Jira data. Worked on **quality assurance, testing processes and DevOps documentation**.
+
+### ⚖️ [Praxis / Case Law](https://github.com/pablohgs05/Case-Law) · 2026
+Collaborative academic project for unified search across Brazilian court decisions. Explore the repository for its **search architecture, test strategy, CI and technical documentation**.
+
+## 🎓 Academic project journey
+
+| Semester | Project | What it explores |
+|:--:|---|---|
+| 1st | [API Porygon](https://github.com/pablohgs05/API-Porygon) | Python application for managing classes, teams and student performance |
+| 2nd | [Weather Reader](https://github.com/pablohgs05/Leitor-de-clima) | Java, CSV processing and climate reports |
+| 3rd | [Porygon2](https://github.com/pablohgs05/Porygon2) | Java/Spring Boot, MySQL and scheduled news web scraping |
+| 4th | [Porygon3](https://github.com/pablohgs05/Porygon3) | Geospatial agricultural platform with Vue, Spring Boot and map workflows |
+| 5th | [Neo Horizon](https://github.com/pablohgs05/API_5S) | Jira-connected BI, Python ETL and dashboards |
+| 6th | [HiATHOS](https://github.com/pablohgs05/Athos) | ANEEL analytics, geographic visualizations and DEC/FEC indicators |
+
+📚 [Explore my detailed Database Technology academic portfolio →](https://github.com/pablohgs05/PortfolioBD-Pablo)
+
+## 🛠️ Toolbox
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=java,spring,python,react,vue,js,html,css,mysql,postgres,git,github,vscode,idea" />
+**Languages, frameworks & tooling**
 
-<br><br>
+<img alt="Tech stack: Python, Java, TypeScript, JavaScript, Spring, React, Vue, MySQL, PostgreSQL, Docker, Git and GitHub" src="https://skillicons.dev/icons?i=python,java,ts,js,spring,react,vue,mysql,postgres,docker,git,github&perline=6">
 
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white"/>
-<img src="https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white"/>
-<img src="https://img.shields.io/badge/VBA-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+**Analytics & industrial systems**
+
+<img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black">
+<img alt="SQL" src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white">
+<img alt="SAP HANA" src="https://img.shields.io/badge/SAP%20HANA-0FAAFF?style=flat-square&logo=sap&logoColor=white">
+<img alt="Excel" src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white">
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+
+</div>
+
+## 🐍 Contributions
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Animated GitHub contributions calendar" src="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake.svg">
+</picture>
+
+<sub>Generated by a GitHub Actions workflow in this repository. Contribution graphs don't capture private professional work or every kind of technical contribution.</sub>
 
 </div>
 
 ---
 
-## 📂 Featured Academic Projects
-
-### 🔹 [API Porygon - 1st Semester](https://github.com/pablohgs05/API-Porygon)
-Python system for managing classes, teams, delivery cycles and student performance metrics.
-
-### 🔹 [Weather Reader - 2nd Semester](https://github.com/pablohgs05/Leitor-de-clima)
-Java application that reads climate data from CSV files and generates analytical reports.
-
-### 🔹 [API Porygon2 - 3rd Semester](https://github.com/pablohgs05/Porygon2)
-Strategic news platform built with Java, Spring Boot and MySQL, focused on collecting, organizing and searching relevant information.
-
-### 🔹 [API Porygon3 - 4th Semester](https://github.com/pablohgs05/Porygon3)
-Full-stack agricultural management platform using Vue, Java, Spring Boot and MySQL.
-
-### 🔹 [NeoHorizon - 5th Semester](https://github.com/pablohgs05/API_5S)
-Business Intelligence platform combining Python, React and Spring Boot to support data-driven decision-making.
-
-### 🔹 [HiAthos - 6th Semester](https://github.com/pablohgs05/Athos)
-Full-stack platform for electric power analytics, centralizing ANEEL data to analyze indicators like DEC and FEC, enabling performance comparison and data-driven decisions.
-
----
-
-## ⚡ Contribution Flow
-
 <div align="center">
 
-**Idea → Code → Data → Automation → Insight → Improvement**
+**Interested in data, automation or software engineering collaborations?**
 
-<br><br>
-
-<img src="https://raw.githubusercontent.com/pablohgs05/pablohgs05/output/github-contribution-grid-snake-dark.svg"/>
-
-</div>
-
----
-
-## 📈 GitHub Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=pablohgs05&theme=react-dark&hide_border=true&area=true"/>
-
-<br><br>
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=pablohgs05&theme=dracula)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## 🎯 Current Mission
-
-> Grow as a developer capable of connecting **software, data, automation and business vision** to build useful, scalable and impactful solutions.
-
----
-
-## 📫 Contact
-
-<div align="center">
-
-📍 São José dos Campos - SP, Brazil  
-🚀 Open to opportunities in **Full-Stack Development, Data Analytics and Process Automation**
-
-<br><br>
-
-<a href="mailto:pablogregorio8@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-pablogregorio8%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/pablo-henrique05/">
-<img src="https://img.shields.io/badge/LinkedIn-Pablo%20Henrique-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://www.instagram.com/pablo.hgs/">
-<img src="https://img.shields.io/badge/Instagram-pablo.hgs-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
+[LinkedIn](https://www.linkedin.com/in/pablo-henrique05/) · [Email](mailto:pablogregorio8@gmail.com) · [GitHub](https://github.com/pablohgs05) · [Instagram](https://www.instagram.com/pablo.hgs/)
 
 </div>
