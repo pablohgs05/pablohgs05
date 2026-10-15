@@ -1,0 +1,2 @@
+Private repository statistics refresh trigger.
+The workflow listens for changes to this marker.
