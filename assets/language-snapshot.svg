@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="217" viewBox="0 0 840 217" role="img" aria-labelledby="title desc">
+  <title id="title">Repository language distribution, October 2026</title>
+  <desc id="desc">Estimated source-file bytes in inspected GitHub repositories: Java 31.2%, Python 27.3%, TypeScript 12.4%, Dart 12.1%, Vue 5.6%, other languages 11.4%. This is not a measure of personal coding time or skill.</desc>
+  <rect x="1" y="1" width="838" height="215" rx="15" fill="#151b29" stroke="#313c50" stroke-width="2"/>
+  <text x="42" y="38" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Repository language mix</text>
+  <text x="42" y="60" fill="#adb9cc" font-family="Arial, Helvetica, sans-serif" font-size="13">Snapshot: Oct 15, 2026 · proportion of tracked source-file bytes</text>
+  <g shape-rendering="geometricPrecision">
+  <rect x="42.00" y="82" width="235.87" height="23" fill="#f89820"/>
+  <rect x="277.87" y="82" width="206.39" height="23" fill="#3776ab"/>
+  <rect x="484.26" y="82" width="93.74" height="23" fill="#3178c6"/>
+  <rect x="578.00" y="82" width="91.48" height="23" fill="#13b8e9"/>
+  <rect x="669.48" y="82" width="42.34" height="23" fill="#42b883"/>
+  <rect x="711.82" y="82" width="86.18" height="23" fill="#8b92ad"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+  <circle cx="49" cy="134" r="6.5" fill="#f89820"/>
+  <text x="64" y="139" font-size="16" fill="#e5eaf2">Java</text>
+  <text x="258" y="139" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">31.2%</text>
+  <circle cx="301" cy="134" r="6.5" fill="#3776ab"/>
+  <text x="316" y="139" font-size="16" fill="#e5eaf2">Python</text>
+  <text x="510" y="139" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">27.3%</text>
+  <circle cx="553" cy="134" r="6.5" fill="#3178c6"/>
+  <text x="568" y="139" font-size="16" fill="#e5eaf2">TypeScript</text>
+  <text x="762" y="139" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">12.4%</text>
+  <circle cx="49" cy="171" r="6.5" fill="#13b8e9"/>
+  <text x="64" y="176" font-size="16" fill="#e5eaf2">Dart</text>
+  <text x="258" y="176" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">12.1%</text>
+  <circle cx="301" cy="171" r="6.5" fill="#42b883"/>
+  <text x="316" y="176" font-size="16" fill="#e5eaf2">Vue</text>
+  <text x="510" y="176" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">5.6%</text>
+  <circle cx="553" cy="171" r="6.5" fill="#8b92ad"/>
+  <text x="568" y="176" font-size="16" fill="#e5eaf2">Other</text>
+  <text x="762" y="176" text-anchor="end" font-size="16" font-weight="700" fill="#f8fafc">11.4%</text>
+  </g>
+  <text x="42" y="200" fill="#98a7bd" font-family="Arial, Helvetica, sans-serif" font-size="12">Includes accessible private repos in aggregate · excludes docs, binaries and generated files</text>
+</svg>
