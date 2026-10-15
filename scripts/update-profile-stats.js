@@ -16,6 +16,7 @@ const langExtensions = {
   sh:'Shell',ps1:'PowerShell'
 };
 const palette = ['#f89820','#3776ab','#3178c6','#13b8e9','#42b883','#8c91aa'];
+const languageColors = {Java:'#f89820',Python:'#3776ab',TypeScript:'#3178c6',Dart:'#13b8e9',Vue:'#42b883',JavaScript:'#f7df1e',Other:'#8c91aa'};
 const exclusions = /(^|\/)(node_modules|vendor|dist|build|coverage|target|\.venv|venv|__pycache__|\.next|\.dart_tool|generated|\.git|out)\//i;
 const generated = /(\.min\.(js|css)|\.g\.(dart|ts)|\.freezed\.dart|\.pb\.go|\.generated\.)/i;
 const escapeXml = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -94,7 +95,7 @@ async function ownedRepositories() {
 }
 async function languages(repositories) {
   const totals={}; let measured=0; let inspected=0; let skipped=0;
-  for(const repo of repositories.filter(r=>!r.fork && !r.archived)) {
+  for(const repo of repositories.filter(r=>!r.archived)) {
     try {
       const tree=await request('/repos/'+repo.full_name+'/git/trees/'+encodeURIComponent(repo.default_branch)+'?recursive=1');
       if(!Array.isArray(tree.tree)||tree.truncated){skipped++;continue;}
@@ -124,7 +125,7 @@ function render(stats, repos, usage) {
   const other=ordered.slice(5).reduce((total,item)=>total+item[1],0);
   if(other>0)top.push(['Other',other]);
   const legend=top.map(([name,bytes],i)=>({
-    name,pct:bytes/usage.measured*100,color:palette[i]
+    name,pct:bytes/usage.measured*100,color:languageColors[name]||palette[i]
   }));
   const shown=legend.map(v=>v.name+' '+v.pct.toFixed(1)+'%').join(', ');
   const ownership=process.env.PROFILE_STATS_TOKEN?'accessible':'public';
@@ -147,7 +148,7 @@ function render(stats, repos, usage) {
     lines.push('<text x="'+(x+16)+'" y="88" font-size="27" font-weight="700" fill="#fff">'+item[0].toLocaleString('en-US')+'</text>');
     lines.push('<text x="'+(x+16)+'" y="111" font-size="12.7" fill="#b9c7da">'+escapeXml(item[1])+'</text>');
   });
-  lines.push('<text x="30" y="161" fill="#dce5f2" font-size="16" font-weight="700">Source-file language mix</text>');
+  lines.push('<text x="30" y="161" fill="#dce5f2" font-size="16" font-weight="700">Source-file language mix (incl. forks)</text>');
   let current=30;
   for(let i=0;i<legend.length;i++){
     const v=legend[i];
@@ -161,7 +162,7 @@ function render(stats, repos, usage) {
     lines.push('<text x="'+(x+20)+'" y="'+y+'" font-size="15" fill="#e5eaf2">'+escapeXml(v.name)+'</text>');
     lines.push('<text x="'+(x+240)+'" y="'+y+'" text-anchor="end" font-size="15" font-weight="700" fill="#fff">'+v.pct.toFixed(1)+'%</text>');
   });
-  lines.push('<text x="30" y="288" font-size="11.5" fill="#94a3b8">GitHub-attributed contributions; language percentages describe repository files, not individual authorship.</text>');
+  lines.push('<text x="30" y="288" font-size="11.5" fill="#94a3b8">GitHub-attributed contributions; languages include forks and describe repository files, not individual authorship.</text>');
   lines.push('</g></svg>');
   return lines.join('\n')+'\n';
 }
