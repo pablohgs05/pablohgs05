@@ -103,9 +103,9 @@ Collaborative academic project for unified search across Brazilian court decisio
 
 - **Automatically refreshed daily** using [GitHub Actions](.github/workflows/profile-stats.yml). The image lives in this repository, not on a third-party statistics website. If an API request fails, the last successfully generated image stays in place.
 - **Contributions:** GitHub-credited commit and pull-request contributions **since 2023**. These can include contributions in other people's or organizations' repositories, not only repositories owned by me. GitHub's contribution rules apply; this isn't a count of every commit in every branch.
-- **Languages:** approximate share of **tracked source-file bytes** in accessible, non-fork repositories owned by my account. Dependencies, most generated files, documentation and binaries are excluded. This isn't a breakdown of personally authored code or a measure of proficiency.
+- **Languages:** approximate share of **tracked source-file bytes** in accessible repositories owned by my account, **including forks**. These bytes can include original project/team code, not only my changes. Dependencies, most generated files, documentation and binaries are excluded. This isn't a breakdown of personally authored code or a measure of proficiency.
 - **Privacy:** by default the updater only analyzes publicly accessible repositories. An optional read-only `PROFILE_STATS_TOKEN` GitHub Actions secret can extend access to permitted private repositories, but their names and code are never displayed. Private contributions may be absent until access is configured.
-- **Initial snapshot:** until the first successful automated refresh, the image shows the previous October 15, 2026 audit (476 commits counted on owned default branches). The automatic count uses a broader GitHub attribution method and should not be compared directly with that baseline.
+- **Counting method:** the earlier manual 476-commit audit only counted commits on owned default branches. This updated GitHub-attribution metric has a broader scope, including credited team contributions, so the totals aren't directly comparable.
 
 [View the updater](scripts/update-profile-stats.js)
 
