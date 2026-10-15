@@ -48,7 +48,7 @@ My journey started with industrial operations as an apprentice, evolved into a m
 ### 🐾 [Grupo Suçuarana — Field Reporting App](https://github.com/pablohgs05/grupo-sucuarana-app) · In development
 Volunteer, offline-first mobile reporting for field operations. The project combines **Flutter/Dart, SQLite, PDF generation and offline synchronization** with a **Java/Spring Boot REST API**, with attention to privacy, reliability and maintainability.
 
-### ⚡ [HiATHOS — Energy Distribution Analytics](https://github.com/pablohgs05/Athos) · 2026
+### ⚡ [HiATHOS — Energy Distribution Analytics](https://github.com/AthosFatecSjc/Athos) · 2026
 Academic project developed with **TECSYS** to analyze public Brazilian electricity regulator (**ANEEL**) data, including **DEC/FEC** continuity indicators. My contributions included **Vue/Leaflet geospatial visualizations, forecasting-related interfaces, testing and DevOps/QA work**.
 
 ### 📈 [Neo Horizon — Jira Business Intelligence](https://github.com/pablohgs05/API_5S) · 2025
@@ -62,13 +62,15 @@ Collaborative academic project for unified search across Brazilian court decisio
 | Semester | Project | What it explores |
 |:--:|---|---|
 | 1st | [API Porygon](https://github.com/pablohgs05/API-Porygon) | Python application for managing classes, teams and student performance |
-| 2nd | [Weather Reader](https://github.com/pablohgs05/Leitor-de-clima) | Java, CSV processing and climate reports |
-| 3rd | [Porygon2](https://github.com/pablohgs05/Porygon2) | Java/Spring Boot, MySQL and scheduled news web scraping |
-| 4th | [Porygon3](https://github.com/pablohgs05/Porygon3) | Geospatial agricultural platform with Vue, Spring Boot and map workflows |
+| 2nd | [Weather Reader](https://github.com/VCCorpTeam/Leitor-de-clima) | Java, CSV processing and climate reports |
+| 3rd | [Porygon2](https://github.com/PorygonAPI/Porygon2) | Java/Spring Boot, MySQL and scheduled news web scraping |
+| 4th | [Porygon3](https://github.com/PorygonAPI/Porygon3) | Geospatial agricultural platform with Vue, Spring Boot and map workflows |
 | 5th | [Neo Horizon](https://github.com/pablohgs05/API_5S) | Jira-connected BI, Python ETL and dashboards |
-| 6th | [HiATHOS](https://github.com/pablohgs05/Athos) | ANEEL analytics, geographic visualizations and DEC/FEC indicators |
+| 6th | [HiATHOS](https://github.com/AthosFatecSjc/Athos) | ANEEL analytics, geographic visualizations and DEC/FEC indicators |
 
 📚 [Explore my detailed Database Technology academic portfolio →](https://github.com/pablohgs05/PortfolioBD-Pablo)
+
+**Also contributed code in team repositories:** [HiATHOS frontend](https://github.com/AthosFatecSjc/frontend) · [HiATHOS backend](https://github.com/AthosFatecSjc/backend) · [PorygonAPI client](https://github.com/PorygonAPI/client) · [PorygonAPI server](https://github.com/PorygonAPI/server).
 
 ## 🛠️ Toolbox
 
@@ -88,23 +90,24 @@ Collaborative academic project for unified search across Brazilian court decisio
 
 </div>
 
-## 📊 GitHub snapshot
-
-| Repositories reviewed | Attributed commits | Private repositories included |
-|:---:|:---:|:---:|
-| **25** | **476** | **5** |
+## 📊 GitHub activity
 
 <div align="center">
-<img width="840" alt="Language distribution across source files in my GitHub repositories: Java 31.2%, Python 27.3%, TypeScript 12.4%, Dart 12.1%, Vue 5.6%, and other languages 11.4%" src="assets/language-snapshot.svg">
+
+<img width="880" alt="Cached GitHub contributions and language distribution; refreshed automatically" src="assets/profile-stats.svg">
+
 </div>
 
 <details>
-<summary>How these statistics were calculated</summary>
+<summary>How these numbers are updated</summary>
 
-* **Snapshot date:** October 15, 2026. These are audited snapshots, not live counters.
-* **Commits:** 476 commits attributed to my GitHub account on the **current default branches of 25 accessible repositories owned by this account**. Commits on other branches, external/team-owned repositories, or with unmatched author identities may not be counted.
-* **Language mix:** approximate share of **2.61 MB of tracked source-file bytes** across 17 code-bearing repositories, including accessible private repositories in aggregate. Documentation-only and empty repositories contribute no source-file bytes; generated/vendor files, binaries and documentation are excluded. Git submodule contents are not included through the parent repository (but are counted where separately accessible).
-* **Important:** these proportions describe the code in repositories, including collaborative projects. They do **not** measure time spent coding, personal lines authored or proficiency. Private repository names and source code are not published.
+- **Automatically refreshed daily** using [GitHub Actions](.github/workflows/profile-stats.yml). The image lives in this repository, not on a third-party statistics website. If an API request fails, the last successfully generated image stays in place.
+- **Contributions:** GitHub-credited commit and pull-request contributions **since 2023**. These can include contributions in other people's or organizations' repositories, not only repositories owned by me. GitHub's contribution rules apply; this isn't a count of every commit in every branch.
+- **Languages:** approximate share of **tracked source-file bytes** in accessible, non-fork repositories owned by my account. Dependencies, most generated files, documentation and binaries are excluded. This isn't a breakdown of personally authored code or a measure of proficiency.
+- **Privacy:** by default the updater only analyzes publicly accessible repositories. An optional read-only `PROFILE_STATS_TOKEN` GitHub Actions secret can extend access to permitted private repositories, but their names and code are never displayed. Private contributions may be absent until access is configured.
+- **Initial snapshot:** until the first successful automated refresh, the image shows the previous October 15, 2026 audit (476 commits counted on owned default branches). The automatic count uses a broader GitHub attribution method and should not be compared directly with that baseline.
+
+[View the updater](scripts/update-profile-stats.js)
 
 </details>
 
