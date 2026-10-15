@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/profile-stats.yml"
       - "scripts/update-profile-stats.js"
+      - "tests/profile-stats.test.js"
       - ".github/profile-stats-refresh"
 
 permissions:
@@ -24,18 +25,24 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
+
+      - name: Test stats selection and script syntax
+        run: |
+          node --check scripts/update-profile-stats.js
+          node --test tests/profile-stats.test.js
 
       - name: Generate stats (preserve last good image on API failure)
         run: node scripts/update-profile-stats.js
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+          REQUIRE_PRIVATE_STATS: "true"
 
       - name: Publish image only when updated
         run: |
