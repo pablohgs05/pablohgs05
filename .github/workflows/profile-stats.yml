@@ -46,4 +46,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/profile-stats.svg
           git commit -m "chore(profile): refresh cached activity stats [skip ci]"
-          git push origin HEAD:main
+          # The README may have changed while statistics were being generated.
+          # Rebase instead of overwriting anyone's changes; never force-push.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Cached image published."
+              exit 0
+            fi
+            echo "Concurrent push detected (attempt $attempt); retrying safely..."
+            sleep 2
+          done
+          echo "Unable to publish updated stats; existing image is still valid." >&2
+          exit 1
