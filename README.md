@@ -101,11 +101,11 @@ Existing application used as the practical environment for my **DevOps coursewor
 <details>
 <summary>How these numbers are updated</summary>
 
-- **Automatically refreshed daily** using [GitHub Actions](.github/workflows/profile-stats.yml). The image lives in this repository, not on a third-party statistics website. If an API request fails, the last successfully generated image stays in place.
-- **Contributions:** GitHub-credited commit and pull-request contributions **since 2023**. These can include contributions in other people's or organizations' repositories, not only repositories owned by me. GitHub's contribution rules apply; this isn't a count of every commit in every branch.
-- **Languages:** approximate share of **tracked source-file bytes** in accessible repositories owned by my account, **including forks**. These bytes can include original project/team code, not only my changes. Dependencies, most generated files, documentation and binaries are excluded. This isn't a breakdown of personally authored code or a measure of proficiency.
-- **Privacy:** by default the updater only analyzes publicly accessible repositories. An optional read-only `PROFILE_STATS_TOKEN` GitHub Actions secret can extend access to permitted private repositories, but their names and code are never displayed. Private contributions may be absent until access is configured.
-- **Counting method:** the earlier manual 476-commit audit only counted commits on owned default branches. This updated GitHub-attribution metric has a broader scope, including credited team contributions, so the totals aren't directly comparable.
+- **Automatic updates:** [GitHub Actions](.github/workflows/profile-stats.yml) refreshes this locally cached image every day, with no third-party stats service or manual README edits.
+- **Contributions:** GitHub-credited commits and pull requests **since 2023**, including eligible activity in team repositories. The updater compares GitHub Actions and read-only token views **year by year** and keeps the larger count for each metric without double-counting overlap. GitHub's contribution eligibility and privacy rules still apply; these aren't counts of every commit on every branch.
+- **Languages:** approximate share of **tracked source-file bytes** across accessible repositories I own, **including private repositories, archives and forks**. Code belonging to teammates or fork origins may be included; this does not measure personal authorship or proficiency. Dependencies, most generated files and binaries are excluded.
+- **Privacy:** the read-only `PROFILE_STATS_TOKEN` allows analysis of accessible private repositories. Only aggregate counts and language percentages are published; private repository names, files and credentials are never exposed by the statistics generator.
+- **Reliability:** the workflow checks the calculation with automated tests. If a token expires or data is incomplete, the job fails visibly and the last valid image remains published. GitHub PATs need renewal at expiration; they cannot safely renew themselves.
 
 [View the updater](scripts/update-profile-stats.js)
 
