@@ -1,43 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="305" viewBox="0 0 880 305" role="img" aria-labelledby="title desc">
-<title id="title">GitHub activity and repository languages, refreshed 2026-10-23</title>
-<desc id="desc">GitHub credited contributions since 2023: 539 commits, 64 pull requests. 25 owned repositories visible to the updater (5 private). Source file distribution: Java 31.0%, Python 27.1%, TypeScript 12.4%, Dart 12.0%, Vue 5.6%, Other 11.8%. Not an authorship or proficiency measurement.</desc>
+<title id="title">GitHub activity and repository languages, refreshed 2026-10-24</title>
+<desc id="desc">GitHub credited contributions since 2023: 539 commits, 67 pull requests. 26 owned repositories visible to the updater (6 private). Source file distribution: Java 30.2%, Python 29.0%, TypeScript 12.0%, Dart 11.7%, Vue 5.4%, Other 11.6%. Not an authorship or proficiency measurement.</desc>
 <rect x="1" y="1" width="878" height="303" rx="16" fill="#151b29" stroke="#303b50" stroke-width="2"/>
 <g font-family="Arial,Helvetica,sans-serif">
 <text x="30" y="36" fill="#f8fafc" font-size="21" font-weight="700">GitHub activity &amp; languages</text>
-<text x="850" y="35" text-anchor="end" fill="#aab7ca" font-size="13">Updated 2026-10-23</text>
+<text x="850" y="35" text-anchor="end" fill="#aab7ca" font-size="13">Updated 2026-10-24</text>
 <rect x="30" y="53" width="262" height="74" rx="8" fill="#202a3d"/>
 <text x="46" y="88" font-size="27" font-weight="700" fill="#fff">539</text>
 <text x="46" y="111" font-size="12.7" fill="#b9c7da">Credited commits since 2023</text>
 <rect x="308" y="53" width="262" height="74" rx="8" fill="#202a3d"/>
-<text x="324" y="88" font-size="27" font-weight="700" fill="#fff">64</text>
+<text x="324" y="88" font-size="27" font-weight="700" fill="#fff">67</text>
 <text x="324" y="111" font-size="12.7" fill="#b9c7da">Pull requests since 2023</text>
 <rect x="586" y="53" width="262" height="74" rx="8" fill="#202a3d"/>
-<text x="602" y="88" font-size="27" font-weight="700" fill="#fff">25</text>
-<text x="602" y="111" font-size="12.7" fill="#b9c7da">Owned repos (incl. 5 private)</text>
+<text x="602" y="88" font-size="27" font-weight="700" fill="#fff">26</text>
+<text x="602" y="111" font-size="12.7" fill="#b9c7da">Owned repos (incl. 6 private)</text>
 <text x="30" y="161" fill="#dce5f2" font-size="16" font-weight="700">Source-file language mix (incl. forks)</text>
-<rect x="30.00" y="171" width="254.59" height="20" fill="#f89820"/>
-<rect x="284.59" y="171" width="222.58" height="20" fill="#3776ab"/>
-<rect x="507.17" y="171" width="101.46" height="20" fill="#3178c6"/>
-<rect x="608.63" y="171" width="98.76" height="20" fill="#13b8e9"/>
-<rect x="707.38" y="171" width="45.66" height="20" fill="#42b883"/>
-<rect x="753.04" y="171" width="96.96" height="20" fill="#8c91aa"/>
+<rect x="30.00" y="171" width="247.70" height="20" fill="#f89820"/>
+<rect x="277.70" y="171" width="238.08" height="20" fill="#3776ab"/>
+<rect x="515.78" y="171" width="98.71" height="20" fill="#3178c6"/>
+<rect x="614.50" y="171" width="96.09" height="20" fill="#13b8e9"/>
+<rect x="710.58" y="171" width="44.42" height="20" fill="#42b883"/>
+<rect x="755.00" y="171" width="95.00" height="20" fill="#8c91aa"/>
 <circle cx="37" cy="214" r="6" fill="#f89820"/>
 <text x="50" y="219" font-size="15" fill="#e5eaf2">Java</text>
-<text x="270" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">31.0%</text>
+<text x="270" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">30.2%</text>
 <circle cx="311" cy="214" r="6" fill="#3776ab"/>
 <text x="324" y="219" font-size="15" fill="#e5eaf2">Python</text>
-<text x="544" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">27.1%</text>
+<text x="544" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">29.0%</text>
 <circle cx="585" cy="214" r="6" fill="#3178c6"/>
 <text x="598" y="219" font-size="15" fill="#e5eaf2">TypeScript</text>
-<text x="818" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">12.4%</text>
+<text x="818" y="219" text-anchor="end" font-size="15" font-weight="700" fill="#fff">12.0%</text>
 <circle cx="37" cy="245" r="6" fill="#13b8e9"/>
 <text x="50" y="250" font-size="15" fill="#e5eaf2">Dart</text>
-<text x="270" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">12.0%</text>
+<text x="270" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">11.7%</text>
 <circle cx="311" cy="245" r="6" fill="#42b883"/>
 <text x="324" y="250" font-size="15" fill="#e5eaf2">Vue</text>
-<text x="544" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">5.6%</text>
+<text x="544" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">5.4%</text>
 <circle cx="585" cy="245" r="6" fill="#8c91aa"/>
 <text x="598" y="250" font-size="15" fill="#e5eaf2">Other</text>
-<text x="818" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">11.8%</text>
+<text x="818" y="250" text-anchor="end" font-size="15" font-weight="700" fill="#fff">11.6%</text>
 <text x="30" y="288" font-size="11.5" fill="#94a3b8">GitHub-attributed contributions; languages include forks and describe repository files, not individual authorship.</text>
 </g></svg>
