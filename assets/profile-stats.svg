@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="305" viewBox="0 0 880 305" role="img" aria-labelledby="title desc">
-<title id="title">GitHub activity and repository languages, refreshed 2026-10-29</title>
+<title id="title">GitHub activity and repository languages, refreshed 2026-10-30</title>
 <desc id="desc">GitHub credited contributions since 2023: 539 commits, 67 pull requests. 26 owned repositories visible to the updater (6 private). Source file distribution: Java 30.2%, Python 29.0%, TypeScript 12.0%, Dart 11.7%, Vue 5.4%, Other 11.6%. Not an authorship or proficiency measurement.</desc>
 <rect x="1" y="1" width="878" height="303" rx="16" fill="#151b29" stroke="#303b50" stroke-width="2"/>
 <g font-family="Arial,Helvetica,sans-serif">
 <text x="30" y="36" fill="#f8fafc" font-size="21" font-weight="700">GitHub activity &amp; languages</text>
-<text x="850" y="35" text-anchor="end" fill="#aab7ca" font-size="13">Updated 2026-10-29</text>
+<text x="850" y="35" text-anchor="end" fill="#aab7ca" font-size="13">Updated 2026-10-30</text>
 <rect x="30" y="53" width="262" height="74" rx="8" fill="#202a3d"/>
 <text x="46" y="88" font-size="27" font-weight="700" fill="#fff">539</text>
 <text x="46" y="111" font-size="12.7" fill="#b9c7da">Credited commits since 2023</text>
